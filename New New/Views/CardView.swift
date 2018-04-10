@@ -33,6 +33,5 @@ import UIKit
         layer.shadowOpacity = Float(shadowOpacity)
     }
     
-    
 }
 

@@ -6,6 +6,7 @@ target 'New New' do
   use_frameworks!
 
   # Pods for New New
+  pod 'Cards'
   pod "TraceLog"
   pod 'Firebase'
   pod 'Firebase/Database'
