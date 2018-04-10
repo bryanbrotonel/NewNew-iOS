@@ -13,6 +13,9 @@
 		933AE51820659EF00086DDFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933AE51620659EF00086DDFE /* Main.storyboard */; };
 		933AE51A20659EF00086DDFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933AE51920659EF00086DDFE /* Assets.xcassets */; };
 		933AE51D20659EF00086DDFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933AE51B20659EF00086DDFE /* LaunchScreen.storyboard */; };
+		93C743BA2065A18100A34227 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93C743B92065A18100A34227 /* GoogleService-Info.plist */; };
+		93C743BC2065A23000A34227 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C743BB2065A23000A34227 /* CardView.swift */; };
+		93C743BE2065A36B00A34227 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C743BD2065A36B00A34227 /* PostViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		933AE51920659EF00086DDFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		933AE51C20659EF00086DDFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		933AE51E20659EF00086DDFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C743B92065A18100A34227 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93C743BB2065A23000A34227 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		93C743BD2065A36B00A34227 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +75,41 @@
 		933AE51120659EF00086DDFE /* New New */ = {
 			isa = PBXGroup;
 			children = (
-				933AE51220659EF00086DDFE /* AppDelegate.swift */,
-				933AE51420659EF00086DDFE /* ViewController.swift */,
-				933AE51620659EF00086DDFE /* Main.storyboard */,
+				93C743B82065A12000A34227 /* Storyboards */,
+				93C743B72065A11B00A34227 /* Controllers */,
+				93C743B62065A11300A34227 /* Views */,
 				933AE51920659EF00086DDFE /* Assets.xcassets */,
-				933AE51B20659EF00086DDFE /* LaunchScreen.storyboard */,
+				93C743B92065A18100A34227 /* GoogleService-Info.plist */,
 				933AE51E20659EF00086DDFE /* Info.plist */,
 			);
 			path = "New New";
+			sourceTree = "<group>";
+		};
+		93C743B62065A11300A34227 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93C743BB2065A23000A34227 /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93C743B72065A11B00A34227 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				933AE51420659EF00086DDFE /* ViewController.swift */,
+				933AE51220659EF00086DDFE /* AppDelegate.swift */,
+				93C743BD2065A36B00A34227 /* PostViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93C743B82065A12000A34227 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				933AE51B20659EF00086DDFE /* LaunchScreen.storyboard */,
+				933AE51620659EF00086DDFE /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		9CEA137C7AD7EE1027BC444C /* Pods */ = {
@@ -151,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				933AE51D20659EF00086DDFE /* LaunchScreen.storyboard in Resources */,
+				93C743BA2065A18100A34227 /* GoogleService-Info.plist in Resources */,
 				933AE51A20659EF00086DDFE /* Assets.xcassets in Resources */,
 				933AE51820659EF00086DDFE /* Main.storyboard in Resources */,
 			);
@@ -181,14 +215,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-New New/Pods-New New-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cards/Cards.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
 				"${BUILT_PRODUCTS_DIR}/TraceLog/TraceLog.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cards.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TraceLog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -224,6 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				933AE51520659EF00086DDFE /* ViewController.swift in Sources */,
+				93C743BC2065A23000A34227 /* CardView.swift in Sources */,
+				93C743BE2065A36B00A34227 /* PostViewCell.swift in Sources */,
 				933AE51320659EF00086DDFE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
